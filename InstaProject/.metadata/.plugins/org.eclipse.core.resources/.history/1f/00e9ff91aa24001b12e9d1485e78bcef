@@ -1,0 +1,25 @@
+package com.cos.instagram.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+@Configuration
+@EnableWebSecurity // 스프링 시큐리티 필터에 등록하는 어노테이션
+@EnableGlobalMethodSecurity(prePostEnabled = true)
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
+	
+	//1.Bean 어노테이션은 메서드에 붙여서 객체 생성시 사용
+	@Bean
+	public BCryptPasswordEncoder encodePWD() {
+		return new BCryptPasswordEncoder();
+		
+	}
+	
+	//2. 필터링
+	
+
+}

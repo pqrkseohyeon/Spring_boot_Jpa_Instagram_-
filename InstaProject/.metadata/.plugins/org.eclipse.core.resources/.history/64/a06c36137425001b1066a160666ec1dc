@@ -1,0 +1,5 @@
+package com.cos.instagram.controller;
+
+public class ImageController {
+
+}

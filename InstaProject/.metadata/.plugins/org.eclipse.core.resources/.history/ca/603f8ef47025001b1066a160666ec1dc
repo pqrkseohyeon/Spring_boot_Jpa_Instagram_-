@@ -1,0 +1,5 @@
+package com.cos.instagram.service;
+
+public class MyUserDetailService {
+
+}

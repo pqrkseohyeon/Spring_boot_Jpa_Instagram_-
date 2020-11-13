@@ -1,0 +1,9 @@
+package com.cos.instagram.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@Enablewebse
+public class SecurityConfig {
+
+}
