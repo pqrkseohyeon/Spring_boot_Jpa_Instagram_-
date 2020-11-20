@@ -1,0 +1,22 @@
+// 수정 좋아요 카운트 증가
+async function onFeedLoad(imageId){
+	let response = await fetch(`/image/like/${imageId}`,{
+		method:"POST"
+	});
+	let msg = await response.text();
+	return msg;
+}
+
+
+async function like(imageId){
+	let response = await fetch(`/image/like/${imageId}`, {
+		method: "POST"
+	});
+	let msg = await response.text();	
+	return msg;
+}
+
+
+
+
+

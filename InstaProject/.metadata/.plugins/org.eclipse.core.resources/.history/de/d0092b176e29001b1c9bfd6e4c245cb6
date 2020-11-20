@@ -1,0 +1,5 @@
+package com.cos.instagram.config;
+
+public class WebConfig {
+
+}

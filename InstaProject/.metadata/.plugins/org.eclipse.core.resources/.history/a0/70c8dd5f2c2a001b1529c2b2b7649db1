@@ -1,0 +1,10 @@
+package com.cos.instagram.repository;
+
+import com.cos.instagram.model.Image;
+import com.cos.instagram.model.Likes;
+import com.cos.instagram.model.User;
+
+public interface LikeRepository {
+
+
+}
